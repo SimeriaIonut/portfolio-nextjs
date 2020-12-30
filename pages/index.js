@@ -1,65 +1,75 @@
 import Head from 'next/head'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/Home.module.scss'
 
 export default function Home() {
   return (
-    <div className={styles.container}>
+    <div>
       <Head>
-        <title>Create Next App</title>
-        <link rel="icon" href="/favicon.ico" />
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <link rel="preconnect" href="https://fonts.gstatic.com" />
+        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet" />
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
+        <title>My portfolio</title>
       </Head>
-
-      <main className={styles.main}>
-        <h1 className={styles.title}>
-          Welcome to <a href="https://nextjs.org">Next.js!</a>
-        </h1>
-
-        <p className={styles.description}>
-          Get started by editing{' '}
-          <code className={styles.code}>pages/index.js</code>
-        </p>
-
-        <div className={styles.grid}>
-          <a href="https://nextjs.org/docs" className={styles.card}>
-            <h3>Documentation &rarr;</h3>
-            <p>Find in-depth information about Next.js features and API.</p>
-          </a>
-
-          <a href="https://nextjs.org/learn" className={styles.card}>
-            <h3>Learn &rarr;</h3>
-            <p>Learn about Next.js in an interactive course with quizzes!</p>
-          </a>
-
-          <a
-            href="https://github.com/vercel/next.js/tree/master/examples"
-            className={styles.card}
-          >
-            <h3>Examples &rarr;</h3>
-            <p>Discover and deploy boilerplate example Next.js projects.</p>
-          </a>
-
-          <a
-            href="https://vercel.com/import?filter=next.js&utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-            className={styles.card}
-          >
-            <h3>Deploy &rarr;</h3>
-            <p>
-              Instantly deploy your Next.js site to a public URL with Vercel.
-            </p>
-          </a>
+      
+      <header>
+        <div className={styles.logoContainer}>
+          <div className={styles.logo}>Logo Here</div>
         </div>
-      </main>
-
-      <footer className={styles.footer}>
-        <a
-          href="https://vercel.com?utm_source=create-next-app&utm_medium=default-template&utm_campaign=create-next-app"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Powered by{' '}
-          <img src="/vercel.svg" alt="Vercel Logo" className={styles.logo} />
-        </a>
-      </footer>
+      </header>
+      <section className={styles.container}>
+        <div className={styles.gridContainer}>
+          <div className={styles.gridItem}>
+            <img src="https://blog.tubikstudio.com/wp-content/uploads/2019/03/bugs_store_webdesign_tubik-1-1024x768.png" alt="project-x" />
+            <div className={styles.seeMoreContainer}>
+              <div className={styles.seeMore}>See more</div>
+            </div>
+          </div>
+          <div className={styles.gridItem}>
+            <img src="https://cdn.shopify.com/s/files/1/1095/6418/files/3d_logo_sample_1024x1024.png?v=1588066397" alt="project-x" />
+            <div className={styles.seeMoreContainer}>
+              <div className={styles.seeMore}>See more</div>
+            </div>
+          </div>
+          <div className={styles.gridItem}>
+            <img src="https://blog.tubikstudio.com/wp-content/uploads/2019/03/restaurant_app_sign_up_screen_design_tubik-1024x768.png" alt="project-x" />
+            <div className={styles.seeMoreContainer}>
+              <div className={styles.seeMore}>See more</div>
+            </div>
+          </div>
+          <div className={styles.gridItem}>
+            <img src="https://www.opstltd.com/wp-content/uploads/2020/05/acfl-1024x768.jpg" />
+            <div className={styles.seeMoreContainer}>
+              <div className={styles.seeMore}>See more</div>
+            </div>
+          </div>
+          <div className={styles.gridItem}>
+            <img src="https://blog.tubikstudio.com/wp-content/uploads/2019/01/business_card-design-ai-designer-1024x768.png" alt="project-x" />
+            <div className={styles.seeMoreContainer}>
+              <div className={styles.seeMore}>See more</div>
+            </div>
+          </div>
+          <div className={styles.gridItem}>
+            <img src="https://maxcdn.icons8.com/app/uploads/2019/09/landing-page-illustrations-design-1024x768.jpg" alt="project-x" />
+            <div className={styles.seeMoreContainer}>
+              <div className={styles.seeMore}>See more</div>
+            </div>
+          </div>
+          <div className={styles.gridItem}>
+            <img src="https://ossmium.com/wp-content/uploads/2018/11/SendX-1600x1200-dribbble-1024x768.png" alt="" />
+            <div className={styles.seeMoreContainer}>
+              <div className={styles.seeMore}>See more</div>
+            </div>
+          </div>
+          <div className={styles.gridItem}>
+            <img src="https://bjarkidesign.dk/wp-content/uploads/2020/06/1-1024x768.jpg" alt="" />
+            <div className={styles.seeMoreContainer}>
+              <div className={styles.seeMore}>See more</div>
+            </div>
+          </div>
+        </div>
+      </section>
     </div>
   )
 }

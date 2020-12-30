@@ -3,7 +3,7 @@ import styles from '../styles/Home.module.scss'
 import Header from '../components/Header'
 import Grid from '../components/Grid'
 
-export default function Home() {
+function Home({ projects }) {
   return (
     <div>
       <Head>
@@ -17,8 +17,17 @@ export default function Home() {
       
       <Header />
       <section className={styles.container}>
-        <Grid />
+        <Grid projects={projects} />
       </section>
     </div>
   )
 }
+
+export async function getStaticProps() {
+  const res = await fetch('http://localhost:3000/api/projects');
+  const projects = await res.json();
+
+  return { props: { projects } };
+}
+
+export default Home;

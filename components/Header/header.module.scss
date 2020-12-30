@@ -1,11 +1,19 @@
 .logoContainer {
   text-align: center;
-  margin: 30px 0;
+  padding: 30px 0 120px 0;
+  background-color: #fff;
+  display: flex;
+  justify-content: center;
 
   .logo {
     font-family: 'Mr Dafoe', cursive;
     color: rgb(63, 63, 63);
     font-size: 38px;
     letter-spacing: 15px;
+    width: 80px;
+
+    img {
+      height: 80px;
+    }
   }
 }

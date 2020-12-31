@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.scss'
 import Header from '../components/Header'
 import Grid from '../components/Grid'
 import Footer from '../components/Footer';
+import { getProjects } from './api/projects';
 
 function Home({ projects }) {
   return (
@@ -27,8 +28,7 @@ function Home({ projects }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch(`${process.env.BASE_URL}/api/hello`);
-  const projects = await res.json();
+  const projects = getProjects();
 
   return { props: { projects } };
 }

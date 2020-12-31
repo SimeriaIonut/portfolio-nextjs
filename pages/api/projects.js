@@ -60,6 +60,10 @@ const projects = [
     image: "https://bjarkidesign.dk/wp-content/uploads/2020/06/1-1024x768.jpg"}
 ];
 
+export const getProjects = () => {
+  return projects;
+}
+
 export default (req, res) => {
   res.statusCode = 200;
   res.json(projects);

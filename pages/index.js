@@ -27,9 +27,7 @@ function Home({ projects }) {
 }
 
 export async function getStaticProps() {
-  const BASE_URL = process.env.BASE_URL;
-  
-  const res = await fetch(`${BASE_URL}/api/projects`);
+  const res = await fetch(`${process.env.BASE_URL}/api/hello`);
   const projects = await res.json();
 
   return { props: { projects } };

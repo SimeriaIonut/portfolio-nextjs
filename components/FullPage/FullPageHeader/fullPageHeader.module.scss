@@ -31,11 +31,21 @@
   }
 
   .backButton {
+    color: #545454;
     font-weight: 300;
     letter-spacing: 1.5px;
     text-transform: uppercase;
     text-align: center;
     cursor: pointer;
+
+    .chevron {
+      display: inline-block;
+      transition: transform .2s linear;
+    }
+
+    &:hover .chevron {
+      transform: translateX(-5px);
+    }
   }
 }
 

@@ -9,7 +9,10 @@ export default function FullPageHeader({ closeFullPage }) {
         </div>
         <div className={styles.title}>Communication Design</div>
       </div>
-      <div className={styles.backButton} onClick={closeFullPage}>&lt; Back</div>
+      <div className={styles.backButton} onClick={closeFullPage}>
+        <span className={styles.chevron}>&lt;</span>
+        Back
+      </div>
     </header>
   )
 }

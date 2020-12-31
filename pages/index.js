@@ -28,6 +28,7 @@ function Home({ projects }) {
 }
 
 export async function getStaticProps() {
+  console.log(process.env.NEXT_PUBLIC_VERCEL_URL);
   const projects = getProjects();
 
   return { props: { projects } };

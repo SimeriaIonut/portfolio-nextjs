@@ -7,6 +7,7 @@ import { getProjects } from './api/projects';
 
 function Home({ projects }) {
   console.log(process.env.NEXT_PUBLIC_VERCEL_URL);
+  console.log(projects);
   return (
     <div>
       <Head>
@@ -31,6 +32,7 @@ function Home({ projects }) {
 export async function getStaticProps() {
   console.log(process.env.NEXT_PUBLIC_VERCEL_URL);
   const projects = getProjects();
+  projects.push({ url: process.env.NEXT_PUBLIC_VERCEL_URL })
 
   return { props: { projects } };
 }

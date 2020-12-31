@@ -3,6 +3,7 @@ import styles from '../styles/Home.module.scss'
 import Header from '../components/Header'
 import Grid from '../components/Grid'
 import Footer from '../components/Footer';
+import { getProjects } from './api/projects';
 
 function Home({ projects }) {
   return (
@@ -26,10 +27,8 @@ function Home({ projects }) {
   )
 }
 
-export async function getStaticProps() {
-  const { NEXT_PUBLIC_VERCEL_URL, PROTOCOL } = process.env;
-  const res = await fetch(`${PROTOCOL}://${NEXT_PUBLIC_VERCEL_URL}/api/projects`);
-  const projects = await res.json();
+export function getStaticProps() {
+  const projects = getProjects();
 
   return { props: { projects } };
 }

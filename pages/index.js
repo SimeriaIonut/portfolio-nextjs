@@ -27,7 +27,7 @@ function Home({ projects }) {
 }
 
 export async function getStaticProps() {
-  const BASE_URL = process.env.BASE_URL;
+  const BASE_URL = process.env.VERCEL_URL || 'http://localhost:3000';
   
   const res = await fetch(`${BASE_URL}/api/projects`);
   const projects = await res.json();

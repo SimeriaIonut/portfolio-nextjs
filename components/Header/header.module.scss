@@ -1,19 +1,20 @@
+@font-face {
+  font-family: 'Raimond';
+  src: url("../../public/fonts/Raimond.otf") format("opentype"), /* Modern Browsers */
+       url("../../public/fonts/Raimond.ttf")  format("truetype");
+}
+
 .logoContainer {
   text-align: center;
-  padding: 30px 0 120px 0;
+  padding: 60px 0 120px 0;
   background-color: #fff;
   display: flex;
   justify-content: center;
 
   .logo {
-    font-family: 'Mr Dafoe', cursive;
+    font-family: 'Raimond', cursive;
     color: rgb(63, 63, 63);
-    font-size: 38px;
-    letter-spacing: 15px;
-    width: 80px;
-
-    img {
-      height: 80px;
-    }
+    font-size: 36px;
+    user-select: none;
   }
 }

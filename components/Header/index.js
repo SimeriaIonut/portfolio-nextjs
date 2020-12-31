@@ -7,6 +7,7 @@ export default function Header() {
         <div className={styles.logo}>
           Stefana Birsan
         </div>
+        <div className={styles.title}>Communication Design</div>
       </div>
     </header>
   )

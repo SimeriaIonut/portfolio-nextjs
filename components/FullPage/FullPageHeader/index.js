@@ -7,8 +7,9 @@ export default function FullPageHeader({ closeFullPage }) {
         <div className={styles.logo}>
           Stefana Birsan
         </div>
+        <div className={styles.title}>Communication Design</div>
       </div>
-      <div className={styles.backButton} onClick={closeFullPage}>&lt; Go Back</div>
+      <div className={styles.backButton} onClick={closeFullPage}>&lt; Back</div>
     </header>
   )
 }

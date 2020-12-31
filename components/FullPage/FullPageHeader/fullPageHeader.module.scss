@@ -10,15 +10,23 @@
   .logoContainer {
     text-align: center;
     margin-bottom:30px;
-    
     display: flex;
     justify-content: center;
+    flex-direction: column;
+    user-select: none;
   
     .logo {
       font-family: 'Raimond', cursive;
       color: rgb(63, 63, 63);
       font-size: 36px;
-      user-select: none;
+    }
+
+    .title {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: #545454;
+      margin-top: 20px;
     }
   }
 

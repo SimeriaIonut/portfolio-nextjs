@@ -15,7 +15,7 @@ function Home({ projects }) {
         <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet" />
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
         <script src="https://kit.fontawesome.com/28b2ed9a65.js" crossorigin="anonymous"></script>
-        <title>My portfolio</title>
+        <title>Stefana Birsan - Communication Design</title>
       </Head>
       
       <Header />

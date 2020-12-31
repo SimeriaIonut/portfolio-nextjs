@@ -57,7 +57,11 @@ const projects = [
   },
   {
     id: 8,
-    image: "https://bjarkidesign.dk/wp-content/uploads/2020/06/1-1024x768.jpg"}
+    title: "Test project",
+    description: "Lorem ipsum...",
+    image: "https://bjarkidesign.dk/wp-content/uploads/2020/06/1-1024x768.jpg",
+    subImages: []
+  }
 ];
 
 export const getProjects = () => {

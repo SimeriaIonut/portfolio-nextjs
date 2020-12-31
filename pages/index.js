@@ -27,8 +27,8 @@ function Home({ projects }) {
 }
 
 export async function getStaticProps() {
-  const { NEXT_PUBLIC_VERCEL_URL } = process.env;
-  const res = await fetch(`${NEXT_PUBLIC_VERCEL_URL}/api/projects`);
+  const { NEXT_PUBLIC_VERCEL_URL, PROTOCOL } = process.env;
+  const res = await fetch(`${PROTOCOL}://${NEXT_PUBLIC_VERCEL_URL}/api/projects`);
   const projects = await res.json();
 
   return { props: { projects } };

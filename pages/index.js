@@ -6,6 +6,7 @@ import Footer from '../components/Footer';
 import { getProjects } from './api/projects';
 
 function Home({ projects }) {
+  console.log(process.env.NEXT_PUBLIC_VERCEL_URL);
   return (
     <div>
       <Head>

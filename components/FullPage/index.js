@@ -1,12 +1,11 @@
-import Header from '../Header';
+import FullPageHeader from './FullPageHeader';
 import Footer from '../Footer';
 import styles from './fullPage.module.scss';
 
 export default function FullPage({ project, closeFullPage }) {
   return (
     <div className={styles.fullPageContainer}>
-      <div className={styles.closeIcon} onClick={closeFullPage}><i class="fas fa-times"></i></div>
-      <Header />
+      <FullPageHeader closeFullPage={closeFullPage} />
       <div className={styles.content}>
         <div className={styles.title}>{project.title}</div>
         <div className={styles.description}>{project.description}</div>

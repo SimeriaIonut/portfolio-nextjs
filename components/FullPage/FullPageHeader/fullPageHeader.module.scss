@@ -1,0 +1,35 @@
+@font-face {
+  font-family: 'Raimond';
+  src: url("../../../public/fonts/Raimond.otf") format("opentype"), /* Modern Browsers */
+       url("../../../public/fonts/Raimond.ttf")  format("truetype");
+}
+
+.fullPageHeader {
+  background-color: #fff;
+  padding: 60px 0 72px 0;
+  .logoContainer {
+    text-align: center;
+    margin-bottom:30px;
+    
+    display: flex;
+    justify-content: center;
+  
+    .logo {
+      font-family: 'Raimond', cursive;
+      color: rgb(63, 63, 63);
+      font-size: 36px;
+      user-select: none;
+    }
+  }
+
+  .backButton {
+    font-weight: 300;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    text-align: center;
+    cursor: pointer;
+  }
+}
+
+
+

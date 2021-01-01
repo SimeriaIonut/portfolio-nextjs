@@ -5,8 +5,8 @@ export default function Footer() {
     <footer className={styles.footer}>
       <div className={styles.heading}>Contact</div>
       <div className={styles.socialMediaContainer}>
-        <a href="https://www.linkedin.com/in/stefanabirsan/" target="_blank"><i className="fab fa-linkedin"></i></a>
-        <a href="https://www.instagram.com/stefbirsan/" target="_blank"><i className="fab fa-instagram"></i></a>
+        <a rel="noreferrer" href="https://www.linkedin.com/in/stefanabirsan/" target="_blank"><i className="fab fa-linkedin"></i></a>
+        <a rel="noreferrer" href="https://www.instagram.com/stefbirsan/" target="_blank"><i className="fab fa-instagram"></i></a>
       </div>
     </footer>
   )

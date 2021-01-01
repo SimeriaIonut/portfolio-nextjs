@@ -2,6 +2,7 @@
   font-family: 'Raimond';
   src: url("../../../public/fonts/Raimond.otf") format("opentype"), /* Modern Browsers */
        url("../../../public/fonts/Raimond.ttf")  format("truetype");
+  font-display: swap;
 }
 
 .fullPageHeader {

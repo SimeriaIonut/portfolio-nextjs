@@ -11,10 +11,9 @@ function Home({ projects }) {
       <Head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <link rel="preconnect" href="https://fonts.gstatic.com" />
-        <link href="https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700&display=swap" rel="stylesheet" />
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" />
-        <script src="https://kit.fontawesome.com/28b2ed9a65.js" crossorigin="anonymous"></script>
+        <meta name="Description" content="Stefana Birsan - Communication Design"></meta>
+        <link rel="stylesheet" href="../styles/normalize.min.css" />
+        <script async src="https://kit.fontawesome.com/28b2ed9a65.js" crossorigin="anonymous"></script>
         <title>Stefana Birsan - Communication Design</title>
       </Head>
       

@@ -8,14 +8,6 @@
   color: rgb(29, 29, 30);
   z-index: 1;
   overflow-y: scroll;
-  transition: all .3s linear;
-  transform: scale(0);
-
-  &.show {
-    transform: scale(1,1);
-    transform-origin: 0 0;
-    
-  }
 
   .closeIcon {
     position: absolute;

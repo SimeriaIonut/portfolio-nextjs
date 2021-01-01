@@ -34,7 +34,7 @@ function Home() {
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta name="Description" content="Stefana Birsan - Communication Design"></meta>
         <link rel="stylesheet" href="../styles/normalize.min.css" />
-        <script src="https://kit.fontawesome.com/28b2ed9a65.js" crossOrigin="anonymous"></script>
+        <script src="../scripts/fontawesome.min.js"></script>
         <title>Stefana Birsan - Communication Design</title>
       </Head>
       

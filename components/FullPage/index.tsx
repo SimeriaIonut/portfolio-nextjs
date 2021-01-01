@@ -2,6 +2,8 @@ import FullPageHeader from './FullPageHeader';
 import Footer from '../Footer';
 import styles from './fullPage.module.scss';
 
+const BROKEN_IMG_PATH = '/images/broken-image.jpg';
+
 export default function FullPage({ project, closeFullPage }) {
   return (
     <div className={styles.fullPageContainer}>
@@ -12,7 +14,7 @@ export default function FullPage({ project, closeFullPage }) {
         <div className={styles.subImagesContainer}>
           {project.fields.subImages.map((subImage: any) => (
             <div className={styles.subImage}>
-              <img src={subImage.fields.file.url} alt="sub-image" />
+              <img src={subImage.fields?.file.url || BROKEN_IMG_PATH} alt="sub-image" />
             </div>
           ))}
         </div>

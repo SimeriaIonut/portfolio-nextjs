@@ -3,17 +3,30 @@ import styles from '../styles/Home.module.scss'
 import Header from '../components/Header'
 import Grid from '../components/Grid'
 import Footer from '../components/Footer';
-import { getProjects } from './api/projects';
+import { useEffect, useState } from 'react';
 
-type ProjectType = {
-  id: number,
-  image: string,
-  title: string,
-  description: string,
-  subImages: Array<string>
-}
+const client = require('contentful').createClient({
+  space: process.env.NEXT_PUBLIC_CONTENTFUL_SPACE_ID,
+  accessToken: process.env.NEXT_PUBLIC_CONTENTFUL_ACCESS_TOKEN,
+});
 
-function Home({ projects }: { projects: ProjectType }) {
+function Home() {
+  const [projects, setProjects] = useState([]);
+  
+  async function fetchProjects() {
+    const entries = await client.getEntries()
+    if (entries.items) return entries.items;
+    console.log(`Error getting Projects. ${entries}`);
+  }
+
+  useEffect(() => {
+    async function getProjects() {
+      const allProjects = await fetchProjects()
+      setProjects([...allProjects]);
+    }
+    getProjects()
+  }, []);
+
   return (
     <div>
       <Head>
@@ -32,12 +45,6 @@ function Home({ projects }: { projects: ProjectType }) {
       <Footer />
     </div>
   )
-}
-
-export function getStaticProps() {
-  const projects = getProjects();
-
-  return { props: { projects } };
 }
 
 export default Home;

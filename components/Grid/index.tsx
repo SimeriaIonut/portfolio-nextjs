@@ -5,7 +5,7 @@ export default function Grid({ projects }) {
   return (
     <div className={styles.gridContainer}>
       {projects.map(project => (
-        <GridItem key={project.id} project={project} />
+        <GridItem key={project.fields.id} project={project} />
       ))}
     </div>
   )

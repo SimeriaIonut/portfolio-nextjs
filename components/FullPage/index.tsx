@@ -7,12 +7,12 @@ export default function FullPage({ project, closeFullPage }) {
     <div className={styles.fullPageContainer}>
       <FullPageHeader closeFullPage={closeFullPage} />
       <div className={styles.content}>
-        <div className={styles.title}>{project.title}</div>
-        <div className={styles.description}>{project.description}</div>
+        <div className={styles.title}>{project.fields.title}</div>
+        <div className={styles.description}>{project.fields.description}</div>
         <div className={styles.subImagesContainer}>
-          {project.subImages.map((imgSrc: string) => (
+          {project.fields.subImages.map((subImage: any) => (
             <div className={styles.subImage}>
-              <img src={imgSrc} alt="sub-image" />
+              <img src={subImage.fields.file.url} alt="sub-image" />
             </div>
           ))}
         </div>

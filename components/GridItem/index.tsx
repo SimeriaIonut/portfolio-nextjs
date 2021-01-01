@@ -11,8 +11,8 @@ export default function GridItem({ project }) {
       <div className={styles.gridItem} onClick={() => setShowFullPage(true)}>
         <Image
           className={styles.gridItemImage}
-          src={`/images/${project.image}`}
-          alt={`Project ${project.id}`}
+          src={`https:${project.fields.image.fields.file.url}`}
+          alt={`Project ${project.fields.id}`}
           layout="responsive"
           width={1024}
           height={768}

@@ -10,7 +10,7 @@ export default function FullPage({ project, closeFullPage }) {
         <div className={styles.title}>{project.title}</div>
         <div className={styles.description}>{project.description}</div>
         <div className={styles.subImagesContainer}>
-          {project.subImages.map(imgSrc => (
+          {project.subImages.map((imgSrc: string) => (
             <div className={styles.subImage}>
               <img src={imgSrc} alt="sub-image" />
             </div>

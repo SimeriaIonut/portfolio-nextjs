@@ -4,9 +4,9 @@ export default function Header() {
   return (
     <header>
       <div className={styles.logoContainer}>
-        <div className={styles.logo}>
+        <h1 className={styles.logo}>
           Stefana Birsan
-        </div>
+        </h1>
         <div className={styles.title}>Communication Design</div>
       </div>
     </header>
